@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Positive Gym Putatan | Muntinlupa City</title>
+<meta name="description" content="Positive Gym in Putatan, Muntinlupa. Open daily 7AM to 11PM. 1 month gym ₱825, gym with treadmill ₱1,275, student ₱775.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="public/images/Gym.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { accent: '#FFD400', fire: '#FF0000' },
+  fontFamily: { display: ['Anton', 'Impact', 'sans-serif'], sans: ['Barlow', 'system-ui', 'sans-serif'] }
+} } };
+</script>
+<style>
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+.hazard { background: repeating-linear-gradient(-45deg, #FFD400 0 14px, #000 14px 28px); }
+a:focus-visible { outline: 3px solid #FFD400; outline-offset: 3px; }
+</style>
+<style type="text/tailwindcss">
+@layer components {
+  .btn { @apply inline-block rounded px-6 py-3.5 text-center font-display text-lg uppercase tracking-wide transition-colors; }
+  .btn-gold { @apply bg-accent text-black hover:bg-white; }
+  .btn-line { @apply border-2 border-neutral-600 text-white hover:border-accent hover:text-accent; }
+  .h2 { @apply font-display text-4xl uppercase leading-none text-white md:text-6xl; }
+}
+</style>
+</head>
+<body class="bg-black font-sans text-neutral-200 antialiased">
+
+<!-- Page background photo. Lower opacity-50 for a darker page, raise it for more photo. Remove "grayscale" for full color. -->
+<div class="fixed inset-0 -z-10" aria-hidden="true">
+  <img src="public/images/gyms2.jpg" alt="" class="h-full w-full object-cover opacity-50 contrast-125 grayscale">
+</div>
+
+<!-- Header -->
+<header class="sticky top-0 z-30 border-b border-neutral-800 bg-black/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+    <a href="#top" class="flex items-center gap-3">
+      <span class="block h-11 w-11 overflow-hidden rounded border-2 border-accent">
+        <img src="public/images/Gym.jpg" alt="Positive Gym logo" class="h-full w-full scale-[1.6] object-cover" style="object-position:50% 45%">
+      </span>
+      <span class="font-display text-xl uppercase tracking-wide text-white">Positive Gym</span>
+    </a>
+    <nav class="hidden items-center gap-8 font-semibold md:flex">
+      <a href="#about" class="hover:text-accent">About</a>
+      <a href="#rates" class="hover:text-accent">Rates</a>
+      <a href="#gallery" class="hover:text-accent">Gallery</a>
+      <a href="#location" class="hover:text-accent">Location</a>
+    </nav>
+    <a data-fb href="#" class="btn btn-gold !px-4 !py-2 !text-base">Join now</a>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section id="top" class="bg-black/40 md:bg-gradient-to-r md:from-black/85 md:via-black/45 md:to-transparent">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-20 pt-14 md:grid-cols-[1.5fr_1fr] md:pb-28 md:pt-24">
+    <div>
+      <h1 class="font-display uppercase leading-[.9]">
+        <span class="block text-2xl tracking-wide text-accent sm:text-3xl">Positive Gym Putatan</span>
+        <span class="mt-3 block text-[24vw] text-white sm:text-9xl lg:text-[10rem]">No pain</span>
+        <span class="block text-[24vw] text-fire sm:text-9xl lg:text-[10rem]">No gain</span>
+      </h1>
+      <p class="mt-6 max-w-md text-lg text-neutral-300">A small neighborhood gym in Putatan, Muntinlupa. Open daily 7AM – 11PM.</p>
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <a data-fb href="#" class="btn btn-gold">Message us on Facebook</a>
+        <a href="#rates" class="btn btn-line">See rates</a>
+      </div>
+    </div>
+    <img src="public/images/Gym.jpg" alt="Positive Gym. Open daily 7AM to 11PM" class="hidden w-full max-w-sm rotate-2 justify-self-center rounded border-4 border-accent shadow-[0_0_60px_-15px_#FFD400] md:block">
+  </div>
+  <div class="hazard h-3" aria-hidden="true"></div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-black/50">
+  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+  <div class="grid gap-8 md:grid-cols-2 md:gap-16">
+    <h2 class="h2">Small gym.<br>Real community.</h2>
+    <div class="max-w-prose space-y-4 text-lg text-neutral-300">
+      <p>Positive Gym is a neighborhood gym in Putatan. No gimmicks and no big-chain crowds, just iron, machines and people who show up and push each other through the last rep.</p>
+      <p>Want cardio with your lifting? Add the treadmill. Still in school? There's a student rate.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Rates -->
+<section id="rates" class="border-y border-neutral-800 bg-black/75 py-16 backdrop-blur-sm md:py-24">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="h2">Rates</h2>
+    <p class="mt-4 text-neutral-400">Posted promo prices. Message us on Facebook to confirm before you come in.</p>
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+
+      <article class="relative flex flex-col rounded-lg border-2 border-accent bg-black p-7 shadow-[0_0_40px_-12px_#FFD400]">
+        <span class="absolute -top-4 left-6 rounded bg-fire px-3 py-1 font-display text-sm uppercase tracking-wide text-white">Most popular</span>
+        <h3 class="font-display text-2xl uppercase text-white">1 Month Gym</h3>
+        <p class="mt-4 font-display text-7xl text-accent"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>825</p>
+        <a data-fb href="#" class="btn btn-gold mt-8">ENROLL NOW!</a>
+      </article>
+
+      <article class="flex flex-col rounded-lg border-2 border-neutral-700 bg-black p-7">
+        <h3 class="font-display text-2xl uppercase text-white">Gym with Treadmill</h3>
+        <p class="mt-4 font-display text-7xl text-white"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>1,275</p>
+        <a data-fb href="#" class="btn btn-line mt-8">ENROLL NOW!</a>
+      </article>
+
+      <article class="flex flex-col rounded-lg border-2 border-neutral-700 bg-black p-7">
+        <h3 class="font-display text-2xl uppercase text-white">Student</h3>
+        <p class="mt-4 font-display text-7xl text-white"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>775</p>
+        <a data-fb href="#" class="btn btn-line mt-8">ENROLL NOW!</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="bg-black/50">
+  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
+    <h2 class="h2">Train with the crew</h2>
+    <div class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">
+      <img src="public/images/more_gym_peps.jpg" alt="Gym members posing together after a workout" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover col-span-2 md:col-span-1">
+      <img src="public/images/equipment.jpg" alt="Dumbbell rack and adjustable benches on the gym floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/gyms4.jpg" alt="The crew gathered on the rubber gym floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/equip2.jpg" alt="Plate-loaded machines and squat racks" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/gyms3.jpg" alt="Members in matching black shirts giving a thumbs up" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/gym_pep.jpg" alt="Gym regulars posing together on the training floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/gyms.jpg" alt="Gym regulars sitting and standing around a bench" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
+      <img src="public/images/gyms2.jpg" alt="Members posing in front of the stone wall and cable machines" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover col-span-2 md:col-span-1">
+    </div>
+  </div>
+</section>
+
+<!-- Location -->
+<section id="location" class="border-t border-neutral-800 bg-black/75 py-16 backdrop-blur-sm md:py-24">
+  <div class="mx-auto max-w-6xl px-4">
+    <h2 class="h2">Find us</h2>
+    <div class="mt-10 overflow-hidden rounded-lg border-2 border-accent">
+      <iframe title="Map showing Positive Gym in Putatan, Muntinlupa" src="https://www.google.com/maps?q=14.3987364,121.0450583&z=17&output=embed" class="block h-80 w-full md:h-[28rem]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <div class="mt-6 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-xl font-semibold text-white">AFMBAI Soldiers, Putatan, Muntinlupa City 1772</p>
+        <p class="mt-1 text-neutral-400">Open Daily 7AM – 11PM</p>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=14.3987364,121.0450583" target="_blank" rel="noopener" class="btn btn-line">Get directions</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-black/80">
+  <div class="hazard h-2" aria-hidden="true"></div>
+  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between">
+    <div>
+      <p class="font-display text-2xl uppercase text-white">Positive Gym Putatan</p>
+      <p class="mt-1 text-sm text-neutral-400">AFMBAI Soldiers, Putatan, Muntinlupa City 1772</p>
+    </div>
+    <a data-fb href="#" class="font-semibold text-accent underline underline-offset-4 hover:text-white">Follow us on Facebook</a>
+    <p class="text-sm text-neutral-500">© 2026 Positive Gym Putatan</p>
+  </div>
+</footer>
+
+<script>
+  // Paste the gym's Facebook page URL here. Every [data-fb] button and link picks it up.
+  const FB_URL = "https://www.facebook.com/profile.php?id=61575635499835";
+  if (FB_URL) document.querySelectorAll("[data-fb]").forEach(a => { a.href = FB_URL; a.target = "_blank"; a.rel = "noopener"; });
+</script>
+</body>
+</html>
