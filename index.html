@@ -1,179 +1,1016 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Positive Gym Putatan | Muntinlupa City</title>
-<meta name="description" content="Positive Gym in Putatan, Muntinlupa. Open daily 7AM to 11PM. 1 month gym ₱825, gym with treadmill ₱1,275, student ₱775.">
-<meta name="theme-color" content="#000000">
-<link rel="icon" href="public/images/Gym.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config = { theme: { extend: {
-  colors: { accent: '#FFD400', fire: '#FF0000' },
-  fontFamily: { display: ['Anton', 'Impact', 'sans-serif'], sans: ['Barlow', 'system-ui', 'sans-serif'] }
-} } };
-</script>
-<style>
-html { scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-.hazard { background: repeating-linear-gradient(-45deg, #FFD400 0 14px, #000 14px 28px); }
-a:focus-visible { outline: 3px solid #FFD400; outline-offset: 3px; }
-</style>
-<style type="text/tailwindcss">
-@layer components {
-  .btn { @apply inline-block rounded px-6 py-3.5 text-center font-display text-lg uppercase tracking-wide transition-colors; }
-  .btn-gold { @apply bg-accent text-black hover:bg-white; }
-  .btn-line { @apply border-2 border-neutral-600 text-white hover:border-accent hover:text-accent; }
-  .h2 { @apply font-display text-4xl uppercase leading-none text-white md:text-6xl; }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Positive Gym Putatan | Premier Fitness Center & Gym in Muntinlupa City</title>
+  <meta name="description" content="Achieve your fitness goals at Positive Gym Putatan, Muntinlupa City. Full gym equipment, expert atmosphere, and flexible memberships starting at ₱775. Open daily 7 AM - 11 PM." />
+  <meta name="keywords" content="Positive Gym Putatan, gym Muntinlupa, fitness center Putatan, Soldiers Hill gym, AFMBAI gym Muntinlupa, workout Muntinlupa, weightlifting, affordable gym Muntinlupa" />
+  <meta name="author" content="Positive Gym Putatan" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://positive-gym-putatan.pages.dev/" />
+  <link rel="icon" href="public/images/Gym.jpg" />
+
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="WizVw-LApQ_OS4UylWw4XXCDVGU2HETs5ZniGolUQ5A" />
+
+  <!-- Geo & Local SEO Tags -->
+  <meta name="geo.region" content="PH-00" />
+  <meta name="geo.placename" content="Putatan, Muntinlupa City" />
+  <meta name="geo.position" content="14.3987364;121.0450583" />
+  <meta name="ICBM" content="14.3987364, 121.0450583" />
+
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:site_name" content="Positive Gym Putatan" />
+  <meta property="og:url" content="https://positive-gym-putatan.pages.dev/" />
+  <meta property="og:title" content="Positive Gym Putatan | Premier Fitness Center in Muntinlupa" />
+  <meta property="og:description" content="Full-service gym located at AFMBAI Soldiers, Putatan, Muntinlupa. Memberships from ₱775. Open 7 days a week: 7 AM – 11 PM." />
+  <meta property="og:image" content="https://positive-gym-putatan.pages.dev/public/images/gyms2.jpg" />
+  <meta property="og:locale" content="en_PH" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Positive Gym Putatan | Premier Fitness Center in Muntinlupa" />
+  <meta name="twitter:description" content="Open daily 7 AM - 11 PM at AFMBAI Soldiers, Putatan, Muntinlupa. Rates from ₱775. Join today!" />
+  <meta name="twitter:image" content="https://positive-gym-putatan.pages.dev/public/images/gyms2.jpg" />
+
+  <!-- Google Fonts: Anton (Impactful Headers) & Barlow (Clean Industrial Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via official CDN bundle -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            accent: '#FFD400',
+            fire: '#FF2A2A',
+            dark: '#08080a',
+            surface: 'rgba(18, 19, 26, 0.75)',
+            borderLight: 'rgba(255, 255, 255, 0.08)'
+          },
+          fontFamily: {
+            display: ['Anton', 'Impact', 'sans-serif'],
+            sans: ['Barlow', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --accent: #FFD400;
+      --fire: #FF2A2A;
+      --bg: #070709;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: #E2E8F0;
+      overflow-x: hidden;
+      font-family: 'Barlow', system-ui, sans-serif;
+    }
+
+    /* Ambient Cursor Spotlight */
+    #cursor-spotlight {
+      pointer-events: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background: radial-gradient(750px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 212, 0, 0.06), transparent 75%);
+      transition: opacity 0.3s ease;
+    }
+
+    /* Background Gym Texture Overlay */
+    .bg-gym-mesh {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image: 
+        radial-gradient(circle at 10% 15%, rgba(255, 212, 0, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(255, 42, 42, 0.07) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(20, 20, 30, 0.4) 0%, transparent 80%);
+    }
+
+    /* Glass Cyber-Iron Cards */
+    .iron-card {
+      background: rgba(15, 16, 22, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .iron-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1.5px;
+      background: radial-gradient(350px circle at var(--card-mouse-x, -500px) var(--card-mouse-y, -500px), rgba(255, 212, 0, 0.35), transparent 70%);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .iron-card:hover::before {
+      opacity: 1;
+    }
+
+    .iron-card:hover {
+      border-color: rgba(255, 212, 0, 0.4);
+      box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.7), 0 0 24px -6px rgba(255, 212, 0, 0.2);
+    }
+
+    /* Hazard Caution Stripes */
+    .hazard-stripe {
+      background: repeating-linear-gradient(-45deg, #FFD400 0 14px, #070709 14px 28px);
+    }
+
+    /* Kinetic Marquee */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 20s linear infinite;
+    }
+
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070709;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #232533;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FFD400;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD for LocalBusiness & ExerciseGym -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["ExerciseGym", "SportsActivityLocation", "HealthClub"],
+        "@id": "https://positive-gym-putatan.pages.dev/#gym",
+        "name": "Positive Gym Putatan",
+        "alternateName": "Positive Gym Muntinlupa",
+        "url": "https://positive-gym-putatan.pages.dev/",
+        "image": "https://positive-gym-putatan.pages.dev/public/images/gyms2.jpg",
+        "logo": "https://positive-gym-putatan.pages.dev/public/images/Gym.jpg",
+        "description": "Positive Gym Putatan is a local neighborhood gym in Putatan, Muntinlupa City, offering strength training, cardio gear, personal fitness, and student rates.",
+        "priceRange": "₱775 - ₱1,275",
+        "currenciesAccepted": "PHP",
+        "paymentAccepted": "Cash, GCash",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "AFMBAI Soldiers Hill Village",
+          "addressLocality": "Putatan",
+          "addressRegion": "Muntinlupa City, Metro Manila",
+          "postalCode": "1772",
+          "addressCountry": "PH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 14.3987364,
+          "longitude": 121.0450583
+        },
+        "hasMap": "https://www.google.com/maps?q=14.3987364,121.0450583",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "07:00",
+            "closes": "23:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-black font-sans text-neutral-200 antialiased">
+<body class="selection:bg-[#FFD400] selection:text-black antialiased relative">
 
-<!-- Page background photo. Lower opacity-50 for a darker page, raise it for more photo. Remove "grayscale" for full color. -->
-<div class="fixed inset-0 -z-10" aria-hidden="true">
-  <img src="public/images/gyms2.jpg" alt="" class="h-full w-full object-cover opacity-50 contrast-125 grayscale">
-</div>
+  <!-- Ambient Light Spotlight & Texture -->
+  <div id="cursor-spotlight"></div>
+  <div class="bg-gym-mesh"></div>
 
-<!-- Header -->
-<header class="sticky top-0 z-30 border-b border-neutral-800 bg-black/90 backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-    <a href="#top" class="flex items-center gap-3">
-      <span class="block h-11 w-11 overflow-hidden rounded border-2 border-accent">
-        <img src="public/images/Gym.jpg" alt="Positive Gym logo" class="h-full w-full scale-[1.6] object-cover" style="object-position:50% 45%">
-      </span>
-      <span class="font-display text-xl uppercase tracking-wide text-white">Positive Gym</span>
-    </a>
-    <nav class="hidden items-center gap-8 font-semibold md:flex">
-      <a href="#about" class="hover:text-accent">About</a>
-      <a href="#rates" class="hover:text-accent">Rates</a>
-      <a href="#gallery" class="hover:text-accent">Gallery</a>
-      <a href="#location" class="hover:text-accent">Location</a>
-    </nav>
-    <a data-fb href="#" class="btn btn-gold !px-4 !py-2 !text-base">Join now</a>
+  <!-- Background Photo with Atmospheric Dark Glass Overlay -->
+  <div class="fixed inset-0 -z-10 pointer-events-none" aria-hidden="true">
+    <img src="public/images/gyms2.jpg" alt="" class="h-full w-full object-cover opacity-20 contrast-125 grayscale" />
+    <div class="absolute inset-0 bg-gradient-to-b from-[#070709]/90 via-[#070709]/80 to-[#070709]"></div>
   </div>
-</header>
 
-<main>
-<!-- Hero -->
-<section id="top" class="bg-black/40 md:bg-gradient-to-r md:from-black/85 md:via-black/45 md:to-transparent">
-  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-20 pt-14 md:grid-cols-[1.5fr_1fr] md:pb-28 md:pt-24">
-    <div>
-      <h1 class="font-display uppercase leading-[.9]">
-        <span class="block text-2xl tracking-wide text-accent sm:text-3xl">Positive Gym Putatan</span>
-        <span class="mt-3 block text-[24vw] text-white sm:text-9xl lg:text-[10rem]">No pain</span>
-        <span class="block text-[24vw] text-fire sm:text-9xl lg:text-[10rem]">No gain</span>
-      </h1>
-      <p class="mt-6 max-w-md text-lg text-neutral-300">A small neighborhood gym in Putatan, Muntinlupa. Open daily 7AM – 11PM.</p>
-      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-        <a data-fb href="#" class="btn btn-gold">Message us on Facebook</a>
-        <a href="#rates" class="btn btn-line">See rates</a>
+  <!-- ============================================== -->
+  <!-- STICKY HEADER WITH LIVE REAL-TIME STATUS       -->
+  <!-- ============================================== -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#070709]/90 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <!-- Gym Logo Brand -->
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="block h-11 w-11 overflow-hidden rounded-xl border-2 border-accent shadow-md shadow-accent/20 group-hover:scale-105 transition-transform">
+          <img src="public/images/Gym.jpg" alt="Positive Gym logo" class="h-full w-full object-cover scale-[1.6]" style="object-position:50% 45%">
+        </span>
+        <div>
+          <span class="font-display text-2xl uppercase tracking-wide text-white block leading-none group-hover:text-accent transition-colors">Positive Gym</span>
+          <span class="text-[10px] font-mono uppercase tracking-widest text-neutral-400 block mt-0.5">Putatan • Muntinlupa</span>
+        </div>
+      </a>
+
+      <!-- Live Manila Gym Radar Status -->
+      <div id="live-gym-status-badge" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono">
+        <span class="relative flex h-2.5 w-2.5">
+          <span id="status-ping" class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span id="status-dot" class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+        </span>
+        <span id="status-text" class="font-bold text-emerald-400">OPEN NOW</span>
+        <span class="text-white/20">•</span>
+        <span id="status-time" class="text-neutral-400">Daily 7AM – 11PM</span>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="hidden items-center gap-6 font-semibold text-sm md:flex text-neutral-300">
+        <a href="#about" class="hover:text-accent transition-colors">About</a>
+        <a href="#rates" class="hover:text-accent transition-colors">Rates</a>
+        <a href="#calc" class="hover:text-accent transition-colors">1RM Tool</a>
+        <a href="#gallery" class="hover:text-accent transition-colors">Training Floor</a>
+        <a href="#location" class="hover:text-accent transition-colors">Find Us</a>
+      </nav>
+
+      <!-- Action Button -->
+      <a 
+        data-fb 
+        href="https://www.facebook.com/profile.php?id=61575635499835" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-accent hover:bg-white text-black font-display text-base uppercase tracking-wider transition-all duration-200 shadow-lg shadow-accent/20 hover:scale-105"
+      >
+        <span>Join Now</span>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ============================================== -->
+  <!-- HERO SECTION                                   -->
+  <!-- ============================================== -->
+  <section id="top" class="relative pt-12 pb-16 md:py-24 overflow-hidden">
+    <div class="mx-auto max-w-6xl px-4 grid items-center gap-10 md:grid-cols-12 relative z-10">
+      
+      <!-- Hero Copy (Span 7) -->
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent font-mono text-xs uppercase tracking-wider">
+          <span>⚡ AFMBAI Soldiers • Putatan, Muntinlupa</span>
+        </div>
+
+        <h1 class="font-display uppercase leading-[0.85] tracking-tight">
+          <span class="block text-2xl sm:text-3xl text-neutral-400 font-mono tracking-normal mb-2 font-normal">Real Neighborhood Gym</span>
+          <span class="block text-[22vw] sm:text-8xl lg:text-9xl text-white">NO PAIN</span>
+          <span class="block text-[22vw] sm:text-8xl lg:text-9xl text-fire">NO GAIN</span>
+        </h1>
+
+        <p class="max-w-lg text-base sm:text-lg text-neutral-300 leading-relaxed font-sans">
+          A small, hard-hitting neighborhood iron sanctuary in Putatan, Muntinlupa. No corporate fluff, no vanity mirrors—just heavy dumbbells, loaded barbells, treadmills, and a crew that pushes you to finish your last rep.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+          <a 
+            data-fb 
+            href="https://www.facebook.com/profile.php?id=61575635499835" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="px-6 py-4 rounded-xl bg-accent hover:bg-white text-black font-display text-lg uppercase tracking-wider text-center transition-all duration-200 shadow-xl shadow-accent/25 hover:scale-[1.02]"
+          >
+            Message us on Facebook
+          </a>
+          <a 
+            href="#rates" 
+            class="px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-display text-lg uppercase tracking-wider text-center transition-all hover:scale-[1.02]"
+          >
+            Explore Rates (₱775+)
+          </a>
+        </div>
+
+        <!-- Quick Proof Badges -->
+        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 font-mono text-xs text-neutral-400">
+          <div>
+            <span class="block text-white font-bold text-sm">7AM – 11PM</span>
+            <span>Open Every Day</span>
+          </div>
+          <div>
+            <span class="block text-accent font-bold text-sm">₱825 / mo</span>
+            <span>Regular Rate</span>
+          </div>
+          <div>
+            <span class="block text-white font-bold text-sm">₱775 / mo</span>
+            <span>Student Discount</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card (Span 5) -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="iron-card rounded-3xl p-4 w-full max-w-sm rotate-1 hover:rotate-0 transition-transform duration-500 shadow-2xl relative group">
+          <div class="aspect-[4/5] rounded-2xl overflow-hidden relative border border-white/10">
+            <img 
+              src="public/images/Gym.jpg" 
+              alt="Positive Gym Putatan official training floor and logo" 
+              class="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+            
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 space-y-1">
+              <span class="text-xs font-mono text-accent uppercase font-semibold block">Live Neighborhood Sanctuary</span>
+              <p class="font-display text-xl text-white uppercase">Putatan Iron Crew</p>
+              <p class="text-[11px] text-neutral-400">Open daily for all strength & fitness goals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hazard Tape Ribbon Marquee -->
+    <div class="mt-14 hazard-stripe h-6 overflow-hidden relative flex items-center">
+      <div class="animate-marquee whitespace-nowrap font-display text-xs uppercase tracking-widest text-black font-bold">
+        <span>// NO PAIN NO GAIN // AFMBAI SOLDIERS PUTATAN // OPEN DAILY 7AM - 11PM // 1 MONTH GYM ₱825 // GYM WITH TREADMILL ₱1,275 // STUDENT RATE ₱775 // REAL COMMUNITY IRON // NO PAIN NO GAIN // AFMBAI SOLDIERS PUTATAN // OPEN DAILY 7AM - 11PM // 1 MONTH GYM ₱825 // GYM WITH TREADMILL ₱1,275 // STUDENT RATE ₱775 // REAL COMMUNITY IRON //</span>
       </div>
     </div>
-    <img src="public/images/Gym.jpg" alt="Positive Gym. Open daily 7AM to 11PM" class="hidden w-full max-w-sm rotate-2 justify-self-center rounded border-4 border-accent shadow-[0_0_60px_-15px_#FFD400] md:block">
-  </div>
-  <div class="hazard h-3" aria-hidden="true"></div>
-</section>
+  </section>
 
-<!-- About -->
-<section id="about" class="bg-black/50">
-  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
-  <div class="grid gap-8 md:grid-cols-2 md:gap-16">
-    <h2 class="h2">Small gym.<br>Real community.</h2>
-    <div class="max-w-prose space-y-4 text-lg text-neutral-300">
-      <p>Positive Gym is a neighborhood gym in Putatan. No gimmicks and no big-chain crowds, just iron, machines and people who show up and push each other through the last rep.</p>
-      <p>Want cardio with your lifting? Add the treadmill. Still in school? There's a student rate.</p>
+  <!-- ============================================== -->
+  <!-- ABOUT SECTION: REAL COMMUNITY                  -->
+  <!-- ============================================== -->
+  <section id="about" class="py-16 md:py-24 relative z-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid gap-8 md:grid-cols-2 md:gap-16 items-center">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-2 font-semibold">The Philosophy</span>
+          <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-none text-white">
+            Small Gym.<br />
+            <span class="text-accent">Real Community.</span>
+          </h2>
+        </div>
+
+        <div class="space-y-4 text-base sm:text-lg text-neutral-300 leading-relaxed font-sans">
+          <p>
+            Positive Gym is a proud neighborhood gym inside AFMBAI Soldiers, Putatan. There are no sales pitches, no crowded commercial influencer lines, and no corporate nonsense.
+          </p>
+          <p>
+            Just raw iron, solid cable stations, dumbbells, squat racks, and everyday people who show up before or after work to lift heavy and motivate each other. Want extra cardio with your lifting? Add treadmill access anytime. Still in school? Our student discount keeps training affordable.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature Highlight Pillars -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-12">
+        <div class="iron-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent text-xl font-bold font-display">
+            01
+          </div>
+          <h3 class="font-display text-2xl uppercase text-white">Heavy Free Weights</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+            Full dumbbell racks, Olympic bars, benches, and squat racks to build real foundational power.
+          </p>
+        </div>
+
+        <div class="iron-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-fire/10 border border-fire/20 flex items-center justify-center text-fire text-xl font-bold font-display">
+            02
+          </div>
+          <h3 class="font-display text-2xl uppercase text-white">Treadmill & Cardio</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+            Combine heavy strength lifting with dedicated treadmill sessions for maximum conditioning and endurance.
+          </p>
+        </div>
+
+        <div class="iron-card rounded-2xl p-6 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl font-bold font-display">
+            03
+          </div>
+          <h3 class="font-display text-2xl uppercase text-white">7AM – 11PM Schedule</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+            16 hours of daily access Monday through Sunday. Train early before the day begins or late night after work.
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-  </div>
-</section>
+  </section>
 
-<!-- Rates -->
-<section id="rates" class="border-y border-neutral-800 bg-black/75 py-16 backdrop-blur-sm md:py-24">
-  <div class="mx-auto max-w-6xl px-4">
-    <h2 class="h2">Rates</h2>
-    <p class="mt-4 text-neutral-400">Posted promo prices. Message us on Facebook to confirm before you come in.</p>
-    <div class="mt-12 grid gap-8 md:grid-cols-3">
+  <!-- ============================================== -->
+  <!-- RATES SECTION WITH TRANSPARENT PRICING         -->
+  <!-- ============================================== -->
+  <section id="rates" class="py-16 md:py-24 border-y border-white/10 bg-[#0c0d12]/60 relative z-10">
+    <div class="mx-auto max-w-6xl px-4 space-y-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-1 font-semibold">Transparent Pricing</span>
+          <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-none text-white">Membership Rates</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-neutral-400 max-w-md font-mono">
+          Posted promo prices. Message us directly on Facebook to lock in your enrollment before coming in.
+        </p>
+      </div>
 
-      <article class="relative flex flex-col rounded-lg border-2 border-accent bg-black p-7 shadow-[0_0_40px_-12px_#FFD400]">
-        <span class="absolute -top-4 left-6 rounded bg-fire px-3 py-1 font-display text-sm uppercase tracking-wide text-white">Most popular</span>
-        <h3 class="font-display text-2xl uppercase text-white">1 Month Gym</h3>
-        <p class="mt-4 font-display text-7xl text-accent"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>825</p>
-        <a data-fb href="#" class="btn btn-gold mt-8">ENROLL NOW!</a>
-      </article>
+      <!-- Pricing Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <article class="flex flex-col rounded-lg border-2 border-neutral-700 bg-black p-7">
-        <h3 class="font-display text-2xl uppercase text-white">Gym with Treadmill</h3>
-        <p class="mt-4 font-display text-7xl text-white"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>1,275</p>
-        <a data-fb href="#" class="btn btn-line mt-8">ENROLL NOW!</a>
-      </article>
+        <!-- Tier 1: 1 Month Gym (Most Popular) -->
+        <article class="iron-card rounded-3xl p-8 flex flex-col justify-between border-2 border-accent relative shadow-2xl shadow-accent/10">
+          <span class="absolute -top-3.5 left-8 rounded-full bg-fire px-3.5 py-1 font-display text-xs uppercase tracking-wider text-white shadow-md">
+            ★ Most Popular
+          </span>
 
-      <article class="flex flex-col rounded-lg border-2 border-neutral-700 bg-black p-7">
-        <h3 class="font-display text-2xl uppercase text-white">Student</h3>
-        <p class="mt-4 font-display text-7xl text-white"><span class="align-top font-sans text-3xl font-bold text-fire">₱</span>775</p>
-        <a data-fb href="#" class="btn btn-line mt-8">ENROLL NOW!</a>
-      </article>
+          <div class="space-y-4">
+            <h3 class="font-display text-3xl uppercase text-white mt-2">1 Month Gym</h3>
+            <p class="text-xs text-neutral-400 font-sans">Full access to weights, machines, and strength floor.</p>
 
+            <div class="py-4">
+              <span class="font-sans text-3xl font-bold text-fire align-top">₱</span>
+              <span class="font-display text-7xl text-accent leading-none">825</span>
+              <span class="text-xs font-mono text-neutral-400 block mt-1">/ month full access</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-neutral-300 font-mono pt-2 border-t border-white/10">
+              <li class="flex items-center gap-2"><span class="text-accent">✓</span> Full dumbbell and barbell floor</li>
+              <li class="flex items-center gap-2"><span class="text-accent">✓</span> Cable machines & plate-loaded gear</li>
+              <li class="flex items-center gap-2"><span class="text-accent">✓</span> Daily access (7AM – 11PM)</li>
+            </ul>
+          </div>
+
+          <a 
+            data-fb 
+            href="https://www.facebook.com/profile.php?id=61575635499835" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="mt-8 w-full py-4 rounded-xl bg-accent hover:bg-white text-black font-display text-lg uppercase tracking-wider text-center transition-all hover:scale-[1.02] shadow-lg shadow-accent/20"
+          >
+            Enroll Now (₱825)
+          </a>
+        </article>
+
+        <!-- Tier 2: Gym with Treadmill -->
+        <article class="iron-card rounded-3xl p-8 flex flex-col justify-between border border-white/10">
+          <div class="space-y-4">
+            <h3 class="font-display text-3xl uppercase text-white mt-2">Gym + Treadmill</h3>
+            <p class="text-xs text-neutral-400 font-sans">Complete iron training plus dedicated cardio treadmill sessions.</p>
+
+            <div class="py-4">
+              <span class="font-sans text-3xl font-bold text-fire align-top">₱</span>
+              <span class="font-display text-7xl text-white leading-none">1,275</span>
+              <span class="text-xs font-mono text-neutral-400 block mt-1">/ month lifting + cardio</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-neutral-300 font-mono pt-2 border-t border-white/10">
+              <li class="flex items-center gap-2"><span class="text-white">✓</span> Everything in 1 Month Gym</li>
+              <li class="flex items-center gap-2"><span class="text-accent font-bold">✓</span> Treadmill cardio machines access</li>
+              <li class="flex items-center gap-2"><span class="text-white">✓</span> Optimal for fat loss & conditioning</li>
+            </ul>
+          </div>
+
+          <a 
+            data-fb 
+            href="https://www.facebook.com/profile.php?id=61575635499835" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="mt-8 w-full py-4 rounded-xl bg-white/10 hover:bg-white hover:text-black text-white font-display text-lg uppercase tracking-wider text-center transition-all hover:scale-[1.02]"
+          >
+            Enroll Now (₱1,275)
+          </a>
+        </article>
+
+        <!-- Tier 3: Student Discount -->
+        <article class="iron-card rounded-3xl p-8 flex flex-col justify-between border border-white/10">
+          <div class="space-y-4">
+            <h3 class="font-display text-3xl uppercase text-white mt-2">Student Rate</h3>
+            <p class="text-xs text-neutral-400 font-sans">Special discounted tier for students with valid school ID.</p>
+
+            <div class="py-4">
+              <span class="font-sans text-3xl font-bold text-fire align-top">₱</span>
+              <span class="font-display text-7xl text-white leading-none">775</span>
+              <span class="text-xs font-mono text-neutral-400 block mt-1">/ month with student ID</span>
+            </div>
+
+            <ul class="space-y-2.5 text-xs text-neutral-300 font-mono pt-2 border-t border-white/10">
+              <li class="flex items-center gap-2"><span class="text-white">✓</span> Full gym floor access</li>
+              <li class="flex items-center gap-2"><span class="text-white">✓</span> Valid Student ID required on entry</li>
+              <li class="flex items-center gap-2"><span class="text-white">✓</span> Perfect for high school & college lifters</li>
+            </ul>
+          </div>
+
+          <a 
+            data-fb 
+            href="https://www.facebook.com/profile.php?id=61575635499835" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="mt-8 w-full py-4 rounded-xl bg-white/10 hover:bg-white hover:text-black text-white font-display text-lg uppercase tracking-wider text-center transition-all hover:scale-[1.02]"
+          >
+            Claim Student (₱775)
+          </a>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Gallery -->
-<section id="gallery" class="bg-black/50">
-  <div class="mx-auto max-w-6xl px-4 py-16 md:py-24">
-    <h2 class="h2">Train with the crew</h2>
-    <div class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-4">
-      <img src="public/images/more_gym_peps.jpg" alt="Gym members posing together after a workout" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover col-span-2 md:col-span-1">
-      <img src="public/images/equipment.jpg" alt="Dumbbell rack and adjustable benches on the gym floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/gyms4.jpg" alt="The crew gathered on the rubber gym floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/equip2.jpg" alt="Plate-loaded machines and squat racks" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/gyms3.jpg" alt="Members in matching black shirts giving a thumbs up" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/gym_pep.jpg" alt="Gym regulars posing together on the training floor" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/gyms.jpg" alt="Gym regulars sitting and standing around a bench" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover">
-      <img src="public/images/gyms2.jpg" alt="Members posing in front of the stone wall and cable machines" loading="lazy" class="aspect-[4/3] w-full rounded border border-neutral-800 object-cover col-span-2 md:col-span-1">
-    </div>
-  </div>
-</section>
+  <!-- ============================================== -->
+  <!-- LIFTER UTILITY: ONE REP MAX (1RM) CALCULATOR   -->
+  <!-- ============================================== -->
+  <section id="calc" class="py-16 md:py-24 relative z-10">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="iron-card rounded-3xl p-8 md:p-12 border border-white/10 bg-gradient-to-br from-[#12131b] via-[#090a0f] to-[#070709]">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5 space-y-4">
+            <span class="text-xs font-mono text-accent uppercase tracking-wider font-semibold block">Lifter Toolkit</span>
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl uppercase text-white leading-none">
+              Calculate Your <br /><span class="text-accent">1-Rep Max</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-neutral-400 font-sans leading-relaxed">
+              Find out your true max strength capacity using the standard Brzycki formula before stepping on the platform.
+            </p>
 
-<!-- Location -->
-<section id="location" class="border-t border-neutral-800 bg-black/75 py-16 backdrop-blur-sm md:py-24">
-  <div class="mx-auto max-w-6xl px-4">
-    <h2 class="h2">Find us</h2>
-    <div class="mt-10 overflow-hidden rounded-lg border-2 border-accent">
-      <iframe title="Map showing Positive Gym in Putatan, Muntinlupa" src="https://www.google.com/maps?q=14.3987364,121.0450583&z=17&output=embed" class="block h-80 w-full md:h-[28rem]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <div class="space-y-4 pt-2">
+              <div>
+                <label class="block text-xs font-mono text-neutral-400 mb-1">Weight Lifted (KG)</label>
+                <input 
+                  type="number" 
+                  id="calc-weight" 
+                  value="80" 
+                  min="1" 
+                  max="500"
+                  class="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white font-mono text-base focus:outline-none focus:border-accent"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono text-neutral-400 mb-1">Reps Performed (1 to 10)</label>
+                <input 
+                  type="number" 
+                  id="calc-reps" 
+                  value="5" 
+                  min="1" 
+                  max="12"
+                  class="w-full px-4 py-3 rounded-xl bg-black/60 border border-white/10 text-white font-mono text-base focus:outline-none focus:border-accent"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-black/50 p-6 md:p-8 rounded-2xl border border-white/10 space-y-6">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+              <span class="text-xs font-mono uppercase text-neutral-400">Estimated 1RM</span>
+              <span class="text-xs font-mono px-2.5 py-1 rounded bg-accent/10 text-accent font-bold">Standard Brzycki Formula</span>
+            </div>
+
+            <div class="flex items-baseline gap-3">
+              <span id="res-1rm" class="font-display text-6xl sm:text-7xl text-accent leading-none">90.2</span>
+              <span class="font-display text-2xl text-white">KG</span>
+            </div>
+
+            <!-- Rep Percentages Breakdown -->
+            <div class="grid grid-cols-3 gap-3 font-mono text-center">
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="text-[10px] text-neutral-400 block">3 Rep Max (93%)</span>
+                <span id="res-3rm" class="text-sm font-bold text-white">83.9 KG</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="text-[10px] text-neutral-400 block">5 Rep Max (87%)</span>
+                <span id="res-5rm" class="text-sm font-bold text-white">78.5 KG</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+                <span class="text-[10px] text-neutral-400 block">10 Rep Max (75%)</span>
+                <span id="res-10rm" class="text-sm font-bold text-white">67.7 KG</span>
+              </div>
+            </div>
+
+            <p class="text-[11px] font-mono text-neutral-400">
+              💡 Tip: Ready to test this max? Come down to Positive Gym Putatan, warm up on the bench or squat rack, and have one of our regulars spot you!
+            </p>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div class="mt-6 flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+  </section>
+
+  <!-- ============================================== -->
+  <!-- TRAINING FLOOR GALLERY (Filterable & Lightbox) -->
+  <!-- ============================================== -->
+  <section id="gallery" class="py-16 md:py-24 relative z-10">
+    <div class="mx-auto max-w-6xl px-4 space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-1 font-semibold">Real Iron & Crew</span>
+          <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-none text-white">The Training Floor</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-1.5 p-1 bg-white/5 rounded-xl border border-white/5 text-xs font-mono self-start sm:self-auto">
+          <button type="button" class="gal-filter active px-3 py-1.5 rounded-lg bg-accent text-black font-bold transition-all cursor-pointer" data-filter="all">All Photos</button>
+          <button type="button" class="gal-filter px-3 py-1.5 rounded-lg text-neutral-400 hover:text-white transition-all cursor-pointer" data-filter="iron">Equipment</button>
+          <button type="button" class="gal-filter px-3 py-1.5 rounded-lg text-neutral-400 hover:text-white transition-all cursor-pointer" data-filter="crew">Community</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="gallery-grid">
+        
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative col-span-2 md:col-span-1" data-cat="crew" onclick="openLightbox('public/images/more_gym_peps.jpg', 'Gym members posing together after an intense workout')">
+          <img src="public/images/more_gym_peps.jpg" alt="Gym members posing together after workout" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="iron" onclick="openLightbox('public/images/equipment.jpg', 'Dumbbell rack and adjustable benches on the gym floor')">
+          <img src="public/images/equipment.jpg" alt="Dumbbell rack and benches" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="crew" onclick="openLightbox('public/images/gyms4.jpg', 'The crew gathered on the rubber gym training floor')">
+          <img src="public/images/gyms4.jpg" alt="The crew on the rubber floor" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="iron" onclick="openLightbox('public/images/equip2.jpg', 'Plate-loaded machines, squat racks, and barbell stations')">
+          <img src="public/images/equip2.jpg" alt="Plate loaded machines" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="crew" onclick="openLightbox('public/images/gyms3.jpg', 'Members in matching black shirts giving a thumbs up')">
+          <img src="public/images/gyms3.jpg" alt="Members in black shirts" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="crew" onclick="openLightbox('public/images/gym_pep.jpg', 'Gym regulars posing together on the training floor')">
+          <img src="public/images/gym_pep.jpg" alt="Gym regulars posing" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative" data-cat="crew" onclick="openLightbox('public/images/gyms.jpg', 'Gym regulars sitting and standing around a workout bench')">
+          <img src="public/images/gyms.jpg" alt="Gym regulars around bench" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+        <div class="gal-item iron-card rounded-2xl overflow-hidden group cursor-pointer relative col-span-2 md:col-span-1" data-cat="crew" onclick="openLightbox('public/images/gyms2.jpg', 'Members posing in front of the stone wall and cable machines')">
+          <img src="public/images/gyms2.jpg" alt="Members posing in front of stone wall" loading="lazy" class="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="font-mono text-xs text-accent bg-black/80 px-2.5 py-1 rounded border border-accent/40">View Photo ↗</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- LOCATION & BATTLE-STATION MAP                  -->
+  <!-- ============================================== -->
+  <section id="location" class="py-16 md:py-24 border-t border-white/10 bg-[#0c0d12]/70 relative z-10">
+    <div class="mx-auto max-w-6xl px-4 space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-mono text-accent uppercase tracking-wider block mb-1 font-semibold">Easy Access</span>
+          <h2 class="font-display text-4xl sm:text-5xl md:text-6xl uppercase leading-none text-white">Find Us in Putatan</h2>
+        </div>
+        <p class="text-xs sm:text-sm text-neutral-400 font-mono">
+          AFMBAI Soldiers, Putatan, Muntinlupa City 1772 • Open Daily 7AM – 11PM
+        </p>
+      </div>
+
+      <div class="iron-card rounded-3xl p-3 border-2 border-accent overflow-hidden shadow-2xl">
+        <iframe 
+          title="Map showing Positive Gym in Putatan, Muntinlupa" 
+          src="https://www.google.com/maps?q=14.3987364,121.0450583&z=17&output=embed" 
+          class="block h-80 w-full md:h-[28rem] rounded-2xl" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <!-- Action Navigation HUD -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+        <div class="iron-card rounded-2xl p-5 flex flex-col justify-between space-y-2">
+          <span class="text-neutral-400 text-[10px] uppercase block">Location Coordinates</span>
+          <span class="font-bold text-white text-sm">14.3987364, 121.0450583</span>
+          <button 
+            type="button" 
+            onclick="copyAddress()" 
+            class="mt-2 text-accent hover:underline flex items-center gap-1.5 cursor-pointer text-[11px]"
+          >
+            <span>📋 Copy Address to Clipboard</span>
+          </button>
+        </div>
+
+        <div class="iron-card rounded-2xl p-5 flex flex-col justify-between space-y-2">
+          <span class="text-neutral-400 text-[10px] uppercase block">Navigation Route</span>
+          <span class="font-bold text-white text-sm">Open in Google Maps</span>
+          <a 
+            href="https://www.google.com/maps/search/?api=1&query=14.3987364,121.0450583" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="mt-2 text-accent hover:underline flex items-center gap-1.5 text-[11px]"
+          >
+            <span>Get Turn-by-Turn Directions ↗</span>
+          </a>
+        </div>
+
+        <div class="iron-card rounded-2xl p-5 flex flex-col justify-between space-y-2">
+          <span class="text-neutral-400 text-[10px] uppercase block">Official Contact</span>
+          <span class="font-bold text-white text-sm">Facebook Messenger</span>
+          <a 
+            data-fb 
+            href="https://www.facebook.com/profile.php?id=61575635499835" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="mt-2 text-accent hover:underline flex items-center gap-1.5 text-[11px]"
+          >
+            <span>Send Direct Message ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================== -->
+  <!-- FOOTER                                         -->
+  <!-- ============================================== -->
+  <footer class="bg-black border-t border-white/10 relative z-10 pb-20 md:pb-8">
+    <div class="hazard-stripe h-2" aria-hidden="true"></div>
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-12 md:flex-row md:items-center md:justify-between">
       <div>
-        <p class="text-xl font-semibold text-white">AFMBAI Soldiers, Putatan, Muntinlupa City 1772</p>
-        <p class="mt-1 text-neutral-400">Open Daily 7AM – 11PM</p>
+        <p class="font-display text-2xl uppercase text-white">Positive Gym Putatan</p>
+        <p class="mt-1 text-sm text-neutral-400 font-mono">AFMBAI Soldiers, Putatan, Muntinlupa City 1772</p>
       </div>
-      <a href="https://www.google.com/maps/search/?api=1&query=14.3987364,121.0450583" target="_blank" rel="noopener" class="btn btn-line">Get directions</a>
+
+      <div class="flex items-center gap-6 font-mono text-xs">
+        <a data-fb href="https://www.facebook.com/profile.php?id=61575635499835" target="_blank" rel="noopener noreferrer" class="font-bold text-accent underline underline-offset-4 hover:text-white">
+          Follow us on Facebook
+        </a>
+      </div>
+
+      <p class="text-xs font-mono text-neutral-500">
+        © 2026 Positive Gym Putatan. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================== -->
+  <!-- MOBILE FLOATING ACTION DOCK                    -->
+  <!-- ============================================== -->
+  <div class="fixed bottom-3 left-4 right-4 z-40 md:hidden">
+    <div class="iron-card rounded-2xl p-2 px-3 flex items-center justify-between border-2 border-accent/60 shadow-2xl bg-black/95">
+      <div class="flex items-center gap-2">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        <span class="text-xs font-mono font-bold text-white">Positive Gym</span>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <a 
+          href="https://www.google.com/maps/search/?api=1&query=14.3987364,121.0450583" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="px-3 py-1.5 rounded-lg bg-white/10 text-white font-mono text-xs"
+        >
+          Map
+        </a>
+        <a 
+          data-fb 
+          href="https://www.facebook.com/profile.php?id=61575635499835" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="px-3 py-1.5 rounded-lg bg-accent text-black font-display text-sm uppercase tracking-wide font-bold"
+        >
+          Enroll ↗
+        </a>
+      </div>
     </div>
   </div>
-</section>
-</main>
 
-<!-- Footer -->
-<footer class="bg-black/80">
-  <div class="hazard h-2" aria-hidden="true"></div>
-  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 md:flex-row md:items-center md:justify-between">
-    <div>
-      <p class="font-display text-2xl uppercase text-white">Positive Gym Putatan</p>
-      <p class="mt-1 text-sm text-neutral-400">AFMBAI Soldiers, Putatan, Muntinlupa City 1772</p>
+  <!-- ============================================== -->
+  <!-- FULLSCREEN LIGHTBOX MODAL                      -->
+  <!-- ============================================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+      <button 
+        type="button" 
+        onclick="closeLightbox()" 
+        class="absolute -top-12 right-0 text-white hover:text-accent font-mono text-sm bg-white/10 px-3 py-1.5 rounded-xl border border-white/20 cursor-pointer"
+      >
+        ✕ Close [ESC]
+      </button>
+      <img id="lightbox-img" src="" alt="" class="max-h-[80vh] w-auto max-w-full rounded-2xl border-2 border-accent object-contain shadow-2xl" />
+      <p id="lightbox-caption" class="mt-3 font-mono text-xs text-neutral-300 text-center"></p>
     </div>
-    <a data-fb href="#" class="font-semibold text-accent underline underline-offset-4 hover:text-white">Follow us on Facebook</a>
-    <p class="text-sm text-neutral-500">© 2026 Positive Gym Putatan</p>
   </div>
-</footer>
 
-<script>
-  // Paste the gym's Facebook page URL here. Every [data-fb] button and link picks it up.
-  const FB_URL = "https://www.facebook.com/profile.php?id=61575635499835";
-  if (FB_URL) document.querySelectorAll("[data-fb]").forEach(a => { a.href = FB_URL; a.target = "_blank"; a.rel = "noopener"; });
-</script>
+  <!-- ============================================== -->
+  <!-- CLIENT JAVASCRIPT LOGIC                        -->
+  <!-- ============================================== -->
+  <script>
+    // 1. Mouse Spotlight tracking
+    const spotlight = document.getElementById('cursor-spotlight');
+    const cards = document.querySelectorAll('.iron-card');
+
+    window.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      document.documentElement.style.setProperty('--mouse-x', `${x}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${y}px`);
+
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        const cardX = x - rect.left;
+        const cardY = y - rect.top;
+        card.style.setProperty('--card-mouse-x', `${cardX}px`);
+        card.style.setProperty('--card-mouse-y', `${cardY}px`);
+      });
+    });
+
+    // 2. Real-Time Manila Gym Status Engine (7:00 AM - 11:00 PM)
+    function updateGymStatus() {
+      const options = {
+        timeZone: 'Asia/Manila',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: false
+      };
+      const formatter = new Intl.DateTimeFormat([], options);
+      const parts = formatter.formatToParts(new Date());
+      const hour = parseInt(parts.find(p => p.type === 'hour').value, 10);
+      const minute = parseInt(parts.find(p => p.type === 'minute').value, 10);
+
+      // Open from 7 (7:00 AM) to 23 (11:00 PM)
+      const isOpen = hour >= 7 && hour < 23;
+
+      const dot = document.getElementById('status-dot');
+      const ping = document.getElementById('status-ping');
+      const text = document.getElementById('status-text');
+      const time = document.getElementById('status-time');
+
+      if (dot && text) {
+        if (isOpen) {
+          dot.className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500";
+          ping.className = "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75";
+          text.textContent = "OPEN NOW";
+          text.className = "font-bold text-emerald-400";
+          time.textContent = "Closes at 11:00 PM";
+        } else {
+          dot.className = "relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500";
+          ping.className = "hidden";
+          text.textContent = "CLOSED NOW";
+          text.className = "font-bold text-amber-400";
+          time.textContent = "Reopens at 7:00 AM";
+        }
+      }
+    }
+    setInterval(updateGymStatus, 30000);
+    updateGymStatus();
+
+    // 3. One Rep Max (1RM) Calculator (Brzycki Formula: Weight * (36 / (37 - Reps)))
+    const weightInput = document.getElementById('calc-weight');
+    const repsInput = document.getElementById('calc-reps');
+    const res1rm = document.getElementById('res-1rm');
+    const res3rm = document.getElementById('res-3rm');
+    const res5rm = document.getElementById('res-5rm');
+    const res10rm = document.getElementById('res-10rm');
+
+    function calculate1RM() {
+      const w = parseFloat(weightInput.value) || 0;
+      const r = Math.min(Math.max(parseInt(repsInput.value, 10) || 1, 1), 12);
+
+      let max = 0;
+      if (r === 1) {
+        max = w;
+      } else {
+        max = w * (36 / (37 - r));
+      }
+
+      res1rm.textContent = max.toFixed(1);
+      res3rm.textContent = `${(max * 0.93).toFixed(1)} KG`;
+      res5rm.textContent = `${(max * 0.87).toFixed(1)} KG`;
+      res10rm.textContent = `${(max * 0.75).toFixed(1)} KG`;
+    }
+
+    if (weightInput && repsInput) {
+      weightInput.addEventListener('input', calculate1RM);
+      repsInput.addEventListener('input', calculate1RM);
+      calculate1RM();
+    }
+
+    // 4. Gallery Category Filter
+    const filterBtns = document.querySelectorAll('.gal-filter');
+    const galItems = document.querySelectorAll('.gal-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-accent', 'text-black', 'font-bold');
+          b.classList.add('text-neutral-400');
+        });
+        btn.classList.add('bg-accent', 'text-black', 'font-bold');
+        btn.classList.remove('text-neutral-400');
+
+        const filter = btn.getAttribute('data-filter');
+        galItems.forEach(item => {
+          const cat = item.getAttribute('data-cat');
+          if (filter === 'all' || cat === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 5. Lightbox Modal
+    const modal = document.getElementById('lightbox-modal');
+    const modalImg = document.getElementById('lightbox-img');
+    const modalCap = document.getElementById('lightbox-caption');
+
+    function openLightbox(src, caption) {
+      if (!modal) return;
+      modalImg.src = src;
+      modalCap.textContent = caption || "";
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeLightbox();
+      });
+    }
+
+    // 6. Copy Address
+    function copyAddress() {
+      navigator.clipboard.writeText('AFMBAI Soldiers, Putatan, Muntinlupa City 1772');
+      alert('Address copied: AFMBAI Soldiers, Putatan, Muntinlupa City 1772');
+    }
+
+    // 7. Auto-bind Facebook links
+    const FB_URL = "https://www.facebook.com/profile.php?id=61575635499835";
+    document.querySelectorAll("[data-fb]").forEach(a => {
+      a.href = FB_URL;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    });
+  </script>
 </body>
 </html>
